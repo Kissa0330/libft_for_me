@@ -10,7 +10,7 @@ $(NAME): ${OBJS}
 	ar rcs $(NAME) $(OBJS)
 
 .c.o :
-	gcc -Wall -Wextra -Werror -c $< -o ${<:.c=.o}
+	cc -Wall -Wextra -Werror -c $< -o ${<:.c=.o}
 
 clean:
 	rm -f $(OBJS)
